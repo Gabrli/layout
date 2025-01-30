@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+:root{
+  --primary: orangered;
+  --secodnary: #5c85ad;
+  --accent: #7c5e5a;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-image: url('./assets/abstract.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form{
+  padding-top: 60px;
+  width: 500px;
+  height: 700px;
+  border: 1px solid var(--primary);
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0 0 30px 0 rgba(0,0,0,0.4);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  background: linear-gradient(
+    50deg,
+    rgba(255, 255, 255, 0.3) 30%,
+    rgba(255, 255, 255, 0.4) 32% 68%,
+    rgba(255, 255, 255, 0.3) 70%
+  );
+}
+
+h1, p{
+  text-align: center;
+  margin: 0;
+}
+.socials{
+  padding-top: 24px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.or{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.or::before{
+  content: '';
+  height: 2px;
+  background: var(--accent);
+}
+.or::after{
+  content: '';
+  height: 2px;
+  background: var(--accent);
+}
+.socials div{
+  border-radius: 16px;
+  border: 1px solid var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 45px;
+  font-size: 1.5rem;
+}
+form{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+input, button{
+  all: unset;
+  padding: 14px;
+  border: 1px solid var(--primary);
+  border-radius: 16px;
+}
+form a {
+  text-align: end;
+  color: var(--secodnary);
+  padding-top: 6px;
+}
+button{
+  color: var(--primary);
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.help{
+  width: 80%;
+  text-align: start;
+  color: var(--accent);
+  padding-top: 14px;
+}
+label{
+  padding-bottom: 6px;
+}
+.help a { color: var(--secodnary);}
